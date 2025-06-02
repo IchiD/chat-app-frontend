@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* カスタムCSS変数 */
+:root {
+  --primary: #3cb68a; /* ティールグリーン（青緑）- ロゴの主要な色 */
+  --primary-light: #8bd5a8; /* ライトグリーン - ロゴのハイライト色 */
+  --primary-dark: #29a37a; /* 暗めのティールグリーン - ホバー状態などに */
+  --text-primary: #2c3e50; /* 暗めのグレー - 主要なテキスト色 */
+  --text-secondary: #4a5568; /* ミディアムグレー - 二次的なテキスト色 */
+  --background-light: #f8fafc; /* かなり明るめの背景色 */
+  --background: #f1f5f9; /* 明るめの背景色 */
+  --border: #e2e8f0; /* 薄いグレー - 境界線の色 */
+}
+
+/* グローバルに全ての角を角ばらせる（例外を除く） */
+* {
+  border-radius: 0 !important;
+}
+
+/* 例外: 丸いままにする要素 */
+/* ローディングサークル（完全に丸い） */
+.animate-spin,
+.rounded-full,
+[class*="rounded-full"],
+.spinner-border,
+[class*="spinner"],
+.btn-circle {
+  border-radius: 50% !important;
+}
+
+/* チャットメッセージの枠（中程度の丸み） */
+.rounded-2xl,
+[class*="rounded-2xl"] {
+  border-radius: 1rem !important;
+}
+
+/* カスタムスタイル */
+body {
+  color: var(--text-primary);
+  background-color: var(--background);
+}
+
+/* ヘッダースタイルのカスタマイズ */
+header {
+  background-color: white;
+  border-bottom: 1px solid var(--border);
+}
+
+/* フッタースタイルのカスタマイズ */
+footer {
+  background-color: white;
+  border-top: 1px solid var(--border);
+}
+
+ 
