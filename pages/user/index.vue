@@ -647,7 +647,7 @@
                   </div>
 
                   <!-- アプリ使い方ガイド -->
-                  <div
+                  <!-- <div
                     class="bg-white rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 p-6"
                   >
                     <h3
@@ -723,9 +723,10 @@
                       </li>
                     </ul>
                   </div>
+                </div> -->
                 </div>
-              </div>
-            </template>
+              </div></template
+            >
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export default defineNuxtConfig({
         process.env.API_BASE_URL ||
         (process.env.NODE_ENV === "production"
           ? "https://web-production-4f969.up.railway.app/api"
-          : "http://localhost:8000/api"),
+          : "http://localhost/api"),
     },
   },
   app: {
