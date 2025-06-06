@@ -9,6 +9,15 @@ interface User {
   google_id?: string; // Google ID追加（オプション）
   avatar?: string; // プロフィール画像URL追加（オプション）
   social_type?: string; // ソーシャルログインの種類追加（オプション）
+  plan?: "free" | "standard" | "premium";
+  subscription_status?:
+    | "active"
+    | "canceled"
+    | "past_due"
+    | "incomplete"
+    | "incomplete_expired"
+    | "trialing"
+    | "unpaid";
 }
 
 // 認証状態の型定義
